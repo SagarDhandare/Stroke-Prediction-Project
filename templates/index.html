@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stroke Prediction Model</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2 class='container-heading'><span class="heading_font">Stroke Prediction</span></h2>
+    </div>
+
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <br>
+            <h3>Gender</h3>
+            <select id="first" class="form-input align-center" name="gender">
+                <option value="none">Select Gender</option>
+                <option value="gender_Female">Female</option>
+                <option value="gender_Male">Male</option>
+            </select>
+            <br>
+            <h3>Age</h3>
+            <input id="second" name="age" placeholder="in Year" required="required">
+            <br>
+            <h3>Hyper Tension</h3>
+            <input id="third" name="hypertension" placeholder="Yes = 1, No=0" required="required">
+            <br>
+            <h3>Heart Disease</h3>
+            <input id="fourth" name="heart_disease" placeholder="Yes = 1, No=0" required="required">
+            <br>
+            <h3>Marriage Status</h3>
+            <input id="fifth" name="ever_married" placeholder="Yes = 1, No=0" required="required">
+            <br>
+            <h3>Residence Type</h3>
+            <input id="sixth" name="Residence_type" placeholder="Rural = 1, Urban = 0" required="required">
+            <br>
+            <h3>Average Glucose Level</h3>
+            <input id="seventh" name="avg_glucose_level" placeholder="in Blood" required="required">
+            <br>
+            <h3>BMI</h3>
+            <input id="eight" name="bmi" placeholder="Body Mass Index" required="required">
+            <br>
+            <h3>Work Type</h3>
+            <select id="ninth" class="form-input align-center" name="work_type">
+                <option value="none">Worktype</option>
+                <option value="work_type_Private">Private</option>
+                <option value="work_type_Self_employed">Self Employed</option>
+                <option value="work_type_Govt_job">Govt Job</option>
+                <option value="work_type_children">Children</option>
+                <option value="work_type_Never_worked">Never Worked</option>
+            </select>
+            <br>
+            <h3>Smoking Status</h3>
+            <select id="tenth" class="form-input align-center" name="smoking_status">
+                <option value="none">Smoking</option>
+                <option value="smoking_status_formerly_smoked">Formerly Smokes</option>
+                <option value="smoking_status_never_smoked">Never Smokes</option>
+                <option value="smoking_status_smokes">Smokes</option>
+                <option value="smoking_status_Unknown">Unknown</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>©2021 Sagar Dhandare</p>
+
+        </form>
+    </div>
+
+
+
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("https://raw.githubusercontent.com/SagarDhandare/Stroke-Prediction-Project/main/stroke.jpg");
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+/* Color */
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+
+
+/* Box */
+        #first {
+            border-radius: 14px;
+            height: 30px;
+            width: 180px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            width: 120px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            width: 180px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            width: 180px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            width: 180px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 25px;
+            width: 220px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 25px;
+            width: 140px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eight {
+            border-radius: 14px;
+            height: 25px;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #ninth {
+            border-radius: 14px;
+            height: 30px;
+            width: 160px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #tenth {
+            border-radius: 14px;
+            height: 30px;
+            width: 160px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+
+
+/* Submit Button */
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+
+
+</body>
+
+</html>
+
+
