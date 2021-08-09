@@ -27,7 +27,7 @@ To run app, run the following command
   
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/SagarDhandare/Chronic-Kidney-Disease-Prediction-Project/main/Images/screenshot.png)
+![App Screenshot](https://raw.githubusercontent.com/SagarDhandare/Stroke-Prediction-Project/main/Images/screenshot.png)
 
   
 ## Deployment
