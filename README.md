@@ -5,6 +5,7 @@ This repository consists of files required to deploy a Machine Learning Web App 
 
 • https://stroke-project.herokuapp.com/
 
+<img src="https://raw.githubusercontent.com/SagarDhandare/Stroke-Prediction-Project/main/stroke2.jpg">
 
 ## Demo
 
