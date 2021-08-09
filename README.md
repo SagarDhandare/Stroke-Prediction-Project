@@ -9,7 +9,7 @@ This repository consists of files required to deploy a Machine Learning Web App 
 
 ## Demo
 
-<img src="https://github.com/SagarDhandare/Stroke-Prediction-Project/blob/main/Images/bandicam%202021-08-09%2013-20-16-057.mp4?raw=true">
+<img src="https://github.com/SagarDhandare/Stroke-Prediction-Project/blob/main/Images/bandicam%202021-08-09%2013-20-16-057.mp4">
 
 ## Tech Stack
 
