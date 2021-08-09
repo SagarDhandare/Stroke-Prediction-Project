@@ -1,7 +1,6 @@
 # Stroke Prediction Project ❤
 This repository consists of files required to deploy a Machine Learning Web App created with Flask and deployed using Heroku platform.
 
-<img src="https://raw.githubusercontent.com/SagarDhandare/Stroke-Prediction-Project/main/stroke2.jpg">
 
 #### If you want to view the deployed model, click on the following link:
 
